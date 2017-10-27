@@ -100,7 +100,7 @@
                   <th>Clave Departamento</th>
                       <th>Nombre Departamento</th>
                       <th>Rfc Trabajador</th>
-                      <th>Acción</th>
+                      <th colspan="2">Acción</th>
                 </tr>
               </thead>
               <tbody>
@@ -113,6 +113,8 @@
             <td><?php echo $rs['trabajador_rfc']?></td>
             <td><a class="btn waves-effect waves-light" href="modificar_departamento.php?clave_depa=<?php
             echo $rs['clave_depa']; ?>">Ver detalles</a></td>
+						<td><a class="btn waves-effect waves-light red" onclick="delete_departamento('<?php echo $rs["clave_depa"]; ?>')" href="#">ELIMINAR</a>
+            </tr>
             </tr>
                 <?php
                   }

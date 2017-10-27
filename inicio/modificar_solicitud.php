@@ -146,7 +146,7 @@
                 <th>Instituto Clave</th>
                 <th>Instructor Rfc</th>
                 <th>No Control Estudiante</th>
-				        <th>Acción</th>
+				        <th colspan="2">Acción</th>
 					    </tr>
 					  </thead>
 					  <tbody>
@@ -163,6 +163,7 @@
               <td><?php echo $rs2['estudiante_No_contro']?></td>
 							<td><a class="btn waves-effect waves-light" href="modificar_solicitud.php?folio=<?php
 							echo $rs2['folio']; ?>">Ver detalles</a></td>
+							<td><a class="btn waves-effect waves-light red" onclick="delete_solicitud(<?php echo $rs2['folio']; ?>)" href="#">ELIMINAR</a>
 						  </tr>
 					    <?php
 				          	}

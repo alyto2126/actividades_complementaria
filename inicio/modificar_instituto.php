@@ -79,7 +79,7 @@
                   <tr>
                       <th>Clave Instituto</th>
                       <th>Nombre Instituto</th>
-                      <th>Accion</th>
+                      <th colspan="2">Accion</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -91,6 +91,7 @@
               <td><?php echo $rs['nombre_instituto']?></td>
             <td><a class="btn waves-effect waves-light" href="modificar_instituto.php?clave=<?php
             echo $rs['clave']; ?>">Ver detalles</a></td>
+						<td><a class="btn waves-effect waves-light red" onclick="delete_instituto('<?php echo $rs["clave"]; ?>')" href="#">ELIMINAR</a>
             </tr>
                 <?php
                   }

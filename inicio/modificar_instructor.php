@@ -132,7 +132,7 @@
             <td><?php echo $rs['act_complementaria_clave_act']?></td>
             <td><a class="btn waves-effect waves-light" href="modificar_instructor.php?rfc=<?php
             echo $rs['rfc']; ?>">Ver detalles</a></td>
-						<td><a class="btn waves-effect waves-light red" onclick="delete_instructor(<?php echo $rs['rfc']; ?>)" href="#">ELIMINAR</a>
+						<td><a class="btn waves-effect waves-light red" onclick="delete_instructor('<?php echo $rs["rfc"]; ?>')" href="#">ELIMINAR</a>
 						</tr>
               <?php
                   }

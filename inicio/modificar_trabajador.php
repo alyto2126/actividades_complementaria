@@ -109,7 +109,7 @@
                       <th>Apellido Paterno</th>
                       <th>Apellido Materno</th>
                       <th>clave Presupuestal</th>
-                      <th>Acción</th>
+                      <th colspan="2">Acción</th>
                 </tr>
               </thead>
               <tbody>
@@ -124,6 +124,7 @@
             <td><?php echo $rs['clave_presupuestal']?></td>
             <td><a class="btn waves-effect waves-light" href="modificar_trabajador.php?rfc=<?php
             echo $rs['rfc']; ?>">Ver detalles</a></td>
+						<td><a class="btn waves-effect waves-light red" onclick="delete_trabajador('<?php echo $rs["rfc"]; ?>')" href="#">ELIMINAR</a>
             </tr>
                 <?php
                   }

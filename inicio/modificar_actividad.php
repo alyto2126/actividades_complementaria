@@ -75,7 +75,7 @@
               <tr>
                   <th>Clave Actividad</th>
                       <th>Nombre Actividad</th>
-                      <th>Acción</th>
+                      <th colspan="2">Acción</th>
                 </tr>
               </thead>
               <tbody>
@@ -87,6 +87,7 @@
             <td><?php echo $rs['nombre_act']?></td>
             <td><a class="btn waves-effect waves-light" href="modificar_actividad.php?clave_act=<?php
             echo $rs['clave_act']; ?>">Ver detalles</a></td>
+						<td><a class="btn waves-effect waves-light red" onclick="delete_act_complementaria(<?php echo $rs['clave_act']; ?>)" href="#">ELIMINAR</a>
             </tr>
                 <?php
                   }
